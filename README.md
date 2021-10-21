@@ -2,4 +2,5 @@ Welcome to my Portfolio page. Here you will learn a little bit about me and get 
 
 Link to my portfolio: https://giftilicious.github.io/Gifty-Portfolio/
  
-<img width="2048" alt="portfolio-page" src="https://user-images.githubusercontent.com/90150892/133548316-8aedd6bd-9640-4d1c-85f4-2c2f75994563.png">
+
+<img width="2044" alt="Screen Shot 2021-10-21 at 3 28 18 PM" src="https://user-images.githubusercontent.com/90150892/138344191-329cb1b9-603b-4325-a5a6-bb08f2665e2b.png">
