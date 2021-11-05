@@ -15,32 +15,14 @@
 </head>
 
 <body>
-  <!-- Navigation bar with logo and links  -->
-  <!-- <div class="p-2 ml-5 mr-5 flex justify-between items-center">
-    <img src="./assets/images/logo-gg_final.jpg" width="250" alt="Gifty Gyimah logo" />
-    <nav>
-      <a href="#about" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">About</a>
-      <a href="#portfolio" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Projects</a>
-      <a href="#contact" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Contact</a>
-    </nav>
-  </div> -->
-  <!-- Hero image -->
-  <!-- <div class="hero-image">
-    <img src="./assets/images/hero-image2.jpg" alt="Hero image"/>
-  <div class="intro">
-      <h1 class="text-4xl uppercase leading-normal text-green-800 ">Clean design. <br>
-        Dynamic execution.|</h1>
-    </div>
-  </div> -->
-
   <!-- Header -->
   <header>
-    <nav class="container flex items-center pb-2 mt-4 sm:mt-12">
+    <nav class="container flex items-center pb-2 mt-4 sm:mt-8">
       <div class="px-6"><img src="./assets/images/logo-gg_final-2.jpg" alt="Gifty Gyimah logo" /></div>
-      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-800 uppercase text-sm">
-        <li class="cursor-pointer">About</li>
-        <li class="cursor-pointer">Projects</li>
-        <li class="cursor-pointer">Contact</li>
+      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-800 uppercase text-md">
+        <a href="#about" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">About</a>
+        <a href="#portfolio" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Projects</a>
+        <a href="#contact" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Contact</a>
       </ul>
       <div class="flex md:hidden flex-1 justify-end pr-4">
         <i class="text-2xl fas fa-bars"></i>
@@ -50,113 +32,118 @@
 
   <!-- Hero image-->
   <section class="hero-image relative">
-    <div class="flex flex-1 justify-center z-10 lg:mb-0">
-      <img class="bg-cover bg-center" src="./assets/images/hero-image-3.jpg" alt="Hero image" />
-    </div>
+    <img class="bg-cover bg-center" src="./assets/images/hero-image-3.jpg" alt="Hero image" />
   </section>
 
   <!-- About section -->
-  <section class="about mt-20">
+  <section class="about mt-20 mb-10" id="about">
     <div class="relative">
       <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
         <!-- content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h2 class="text-2xl font-semibold mb-5">Hi, I'm Gifty!</h2>
+          <h2 class="text-2xl font-semibold mb-4">Hi, I'm Gifty!</h2>
           <p class="text-gray-700 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
             I'm a software developer who loves to build responsive websites and awesome applications. I specialize in
             Full Stack development and enjoy seeing projects through from beginning to end.
           </p>
-          <p class="text-gray-700 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+          <p class="text-gray-700 my-2 text-center lg:text-left sm:w-3/4 lg:w-full">
             Besides English, I'm fluent in many other languages such as HTML, CSS, and JavaScript. I also have
             experience in
             the NodeJS
             framework and data management tools like SQL. Feel free to look through some of the projects I've worked on.
           </p>
-          <button class="mb-6 mt-4 py-3 px-4 border-gray-800 border-2 bg-transparent text-md text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
-              IN TOUCH</button>
+          <button
+            class="mb-6 mt-4 py-3 px-4 border-gray-800 border-2 bg-transparent text-md text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
+            IN TOUCH</button>
         </div>
         <!-- image -->
         <div class="flex flex-1 justify-center z-10 mb-10 sm:py-12 lg:mb-0">
-          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./assets/images/about-portrait.jpg"
-            alt="Gifty typing on laptop outside" />
-        </div>        
+          <img class="rounded shadow-lg w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            src="./assets/images/about-portrait.jpg" alt="Gifty typing on laptop outside" />
+        </div>
       </div>
-    </div>  
+    </div>
   </section>
 
-  <!-- Main section with links to projects -->
-  <section class="container mx-auto pb-32" id="portfolio">
-    <!-- Portfolio Cards -->
-    <div class="p-24 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-12 gap-y-16 justify-items-center">
-      <!-- Card 1  -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <a href="https://giftilicious.github.io/Travel-Guide//" target="_blank"><img class="w-full"
-            src="./assets/images/trailr-portfolio.jpg" alt="Bike trail Project"></a>
-        <div class="px-6 py-4">
-          <div class="font-semibold text-xl mb-2">Trailr</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+  <!-- Project section -->
+  <section class="bg-gray-50 pt-8">
+    <div class="container bg-gray-50 mx-auto pb-32" id="portfolio">
+
+      <!-- Portfolio Cards -->
+      <div class="p-24 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-12 gap-y-16 justify-items-center">
+        <!-- Card 1  -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://giftilicious.github.io/Travel-Guide//" target="_blank"><img class="w-full"
+              src="./assets/images/trailr-portfolio.jpg" alt="Bike trail Project"></a>
+          <div class="px-6 py-4">
+            <div class="font-semibold text-xl mb-2">Trailr</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <a href="https://giftilicious.github.io/Weather-App/" target="_blank"><img class="w-full"
-            src="./assets/images/weather-portfolio.jpg" alt="Weather dashboard project"></a>
-        <div class="px-6 py-4">
-          <div class="font-semibold text-xl mb-2">Weather Dashboard</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <!-- Card 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://giftilicious.github.io/Weather-App/" target="_blank"><img class="w-full"
+              src="./assets/images/weather-portfolio.jpg" alt="Weather dashboard project"></a>
+          <div class="px-6 py-4">
+            <div class="font-semibold text-xl mb-2">Weather Dashboard</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <a href="https://giftilicious.github.io/Work-Day-Scheduler/" target="_blank"><img class="w-full"
-            src="./assets/images/planner-portfolio.jpg" alt="Digital planner project"></a>
-        <div class="px-6 py-4">
-          <div class="font-semibold text-xl mb-2">Digital Planner</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <!-- Card 3 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://giftilicious.github.io/Work-Day-Scheduler/" target="_blank"><img class="w-full"
+              src="./assets/images/planner-portfolio.jpg" alt="Digital planner project"></a>
+          <div class="px-6 py-4">
+            <div class="font-semibold text-xl mb-2">Digital Planner</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <a href="https://giftilicious.github.io/Coding-Quiz/" target="_blank"><img class="w-full"
-            src="./assets/images/quiz-portfolio.jpg" alt="Code quiz game"></a>
-        <div class="px-6 py-4">
-          <div class="font-semibold text-xl mb-2">Code Quiz</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <!-- Card 4 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://giftilicious.github.io/Coding-Quiz/" target="_blank"><img class="w-full"
+              src="./assets/images/quiz-portfolio.jpg" alt="Code quiz game"></a>
+          <div class="px-6 py-4">
+            <div class="font-semibold text-xl mb-2">Code Quiz</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <a href="https://github.com/giftilicious/README-Generator" target="_blank"><img class="w-full"
-            src="./assets/images/readme-portfolio.jpg" alt="Readme generator project"></a>
-        <div class="px-6 py-4">
-          <div class="font-semibold text-xl mb-2">README Generator</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <!-- Card 5 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://github.com/giftilicious/README-Generator" target="_blank"><img class="w-full"
+              src="./assets/images/readme-portfolio.jpg" alt="Readme generator project"></a>
+          <div class="px-6 py-4">
+            <div class="font-semibold text-xl mb-2">README Generator</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Card 6 -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <a href="https://giftilicious.github.io/Password-Generator/" target="_blank"><img class="w-full"
-            src="./assets/images/password-portfolio.jpg" alt="Password generator project"></a>
-        <div class="px-6 py-4">
-          <div class="font-semibold text-xl mb-2">Password Generator</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
+        <!-- Card 6 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <a href="https://giftilicious.github.io/Password-Generator/" target="_blank"><img class="w-full"
+              src="./assets/images/password-portfolio.jpg" alt="Password generator project"></a>
+          <div class="px-6 py-4">
+            <div class="font-semibold text-xl mb-2">Password Generator</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
+
+
       </div>
+
   </section>
 
-  <!-- Footer with contact links -->
+  <!-- Footer  -->
   <footer class="bg-gray-800 p-10 flex justify-between items-center" id="contact">
     <h2 class="text-white">Get In Touch!</h2>
     <nav>
