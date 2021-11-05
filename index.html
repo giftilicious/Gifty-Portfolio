@@ -37,7 +37,7 @@
   <header>
     <nav class="container flex items-center pb-2 mt-4 sm:mt-12">
       <div class="px-6"><img src="./assets/images/logo-gg_final-2.jpg" alt="Gifty Gyimah logo" /></div>
-      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-700 uppercase text-md">
+      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-800 uppercase text-sm">
         <li class="cursor-pointer">About</li>
         <li class="cursor-pointer">Projects</li>
         <li class="cursor-pointer">Contact</li>
@@ -48,45 +48,41 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="relative">
-    <div class="flex flex-col lg:flex-row items-center gap-12">
-      <!-- image -->
-      <div class="hero-image flex justify-center flex-1 z-10">
-        <img src="./assets/images/hero-image-3.jpg" alt="Hero image" />
+  <!-- Hero image-->
+  <section class="hero-image relative">
+    <div class="flex flex-1 justify-center z-10 lg:mb-0">
+      <img class="bg-cover bg-center" src="./assets/images/hero-image-3.jpg" alt="Hero image" />
     </div>
-      <!-- text -->
-      
-    </div>
-
   </section>
 
   <!-- About section -->
-  <!-- <div class="about" id="about">
-    <div class="p-28">
-      <div class="bg-white shadow-md">
-        <div class="flex">
-          <div class="p-20">
-            <h2 class="text-3xl font-extrabold mb-5">Hi, I'm Gifty!</h2>
-            <p class="text-gray-700">
-              I'm a software developer who loves to build responsive websites and awesome applications. I specialize in
-              Full Stack development and enjoy seeing projects through from beginning to end. 
-            </p>
-            <br>
-            <p class="text-gray-700">
-              Besides English, I'm fluent in many other languages such as HTML, CSS, and JavaScript. I also have experience in the NodeJS
-              framework and data management tools like SQL. Feel free to look through some of the projects I've worked on.
-            </p> -->
-  <!-- <button
-              class="mt-6 py-3 px-4 border-gray-800 border-2 bg-transparent text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
-              IN TOUCH</button> -->
-  <!-- </div>
-          <img src="./assets/images/about-portrait.jpg" class="w-1/2 object-cover" />
+  <section class="about mt-20">
+    <div class="relative">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        <!-- content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-2xl font-semibold mb-5">Hi, I'm Gifty!</h2>
+          <p class="text-gray-700 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            I'm a software developer who loves to build responsive websites and awesome applications. I specialize in
+            Full Stack development and enjoy seeing projects through from beginning to end.
+          </p>
+          <p class="text-gray-700 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            Besides English, I'm fluent in many other languages such as HTML, CSS, and JavaScript. I also have
+            experience in
+            the NodeJS
+            framework and data management tools like SQL. Feel free to look through some of the projects I've worked on.
+          </p>
+          <button class="mb-6 mt-4 py-3 px-4 border-gray-800 border-2 bg-transparent text-md text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
+              IN TOUCH</button>
         </div>
+        <!-- image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 sm:py-12 lg:mb-0">
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./assets/images/about-portrait.jpg"
+            alt="Gifty typing on laptop outside" />
+        </div>        
       </div>
-    </div>
-  </div> -->
-
+    </div>  
+  </section>
 
   <!-- Main section with links to projects -->
   <section class="container mx-auto pb-32" id="portfolio">

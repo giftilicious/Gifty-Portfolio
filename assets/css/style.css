@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     margin: 0;
 }
 
@@ -47,7 +47,6 @@ nav{
 } */
 
 .hero-image {
-    background-image: url("./assets/images/hero-image2.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
