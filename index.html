@@ -7,30 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work With Gifty</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- Navigation bar with logo and links  -->
-  <div class="p-2 ml-5 mr-5 flex justify-between items-center">
+  <!-- <div class="p-2 ml-5 mr-5 flex justify-between items-center">
     <img src="./assets/images/logo-gg_final.jpg" width="250" alt="Gifty Gyimah logo" />
     <nav>
       <a href="#about" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">About</a>
       <a href="#portfolio" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Projects</a>
       <a href="#contact" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Contact</a>
     </nav>
-  </div>
+  </div> -->
   <!-- Hero image -->
-  <div class="hero-image">
+  <!-- <div class="hero-image">
     <img src="./assets/images/hero-image2.jpg" alt="Hero image"/>
-    <!-- <div class="intro">
+  <div class="intro">
       <h1 class="text-4xl uppercase leading-normal text-green-800 ">Clean design. <br>
         Dynamic execution.|</h1>
-    </div> -->
-  </div>
+    </div>
+  </div> -->
 
-<!-- About section -->
-  <div class="about" id="about">
+  <!-- Header -->
+  <header>
+    <nav class="container flex items-center pb-2 mt-4 sm:mt-12">
+      <div class="px-6"><img src="./assets/images/logo-gg_final-2.jpg" alt="Gifty Gyimah logo" /></div>
+      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-700 uppercase text-md">
+        <li class="cursor-pointer">About</li>
+        <li class="cursor-pointer">Projects</li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+      <div class="flex md:hidden flex-1 justify-end pr-4">
+        <i class="text-2xl fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <!-- image -->
+      <div class="hero-image flex justify-center flex-1 z-10">
+        <img src="./assets/images/hero-image-3.jpg" alt="Hero image" />
+    </div>
+      <!-- text -->
+      
+    </div>
+
+  </section>
+
+  <!-- About section -->
+  <!-- <div class="about" id="about">
     <div class="p-28">
       <div class="bg-white shadow-md">
         <div class="flex">
@@ -44,16 +76,16 @@
             <p class="text-gray-700">
               Besides English, I'm fluent in many other languages such as HTML, CSS, and JavaScript. I also have experience in the NodeJS
               framework and data management tools like SQL. Feel free to look through some of the projects I've worked on.
-            </p>
-            <!-- <button
+            </p> -->
+  <!-- <button
               class="mt-6 py-3 px-4 border-gray-800 border-2 bg-transparent text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
               IN TOUCH</button> -->
-          </div>
+  <!-- </div>
           <img src="./assets/images/about-portrait.jpg" class="w-1/2 object-cover" />
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Main section with links to projects -->
@@ -65,7 +97,7 @@
         <a href="https://giftilicious.github.io/Travel-Guide//" target="_blank"><img class="w-full"
             src="./assets/images/trailr-portfolio.jpg" alt="Bike trail Project"></a>
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Trailr</div>
+          <div class="font-semibold text-xl mb-2">Trailr</div>
           <p class="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -76,7 +108,7 @@
         <a href="https://giftilicious.github.io/Weather-App/" target="_blank"><img class="w-full"
             src="./assets/images/weather-portfolio.jpg" alt="Weather dashboard project"></a>
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Weather Dashboard</div>
+          <div class="font-semibold text-xl mb-2">Weather Dashboard</div>
           <p class="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -87,7 +119,7 @@
         <a href="https://giftilicious.github.io/Work-Day-Scheduler/" target="_blank"><img class="w-full"
             src="./assets/images/planner-portfolio.jpg" alt="Digital planner project"></a>
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Digital Planner</div>
+          <div class="font-semibold text-xl mb-2">Digital Planner</div>
           <p class="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -98,7 +130,7 @@
         <a href="https://giftilicious.github.io/Coding-Quiz/" target="_blank"><img class="w-full"
             src="./assets/images/quiz-portfolio.jpg" alt="Code quiz game"></a>
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Code Quiz</div>
+          <div class="font-semibold text-xl mb-2">Code Quiz</div>
           <p class="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -109,7 +141,7 @@
         <a href="https://github.com/giftilicious/README-Generator" target="_blank"><img class="w-full"
             src="./assets/images/readme-portfolio.jpg" alt="Readme generator project"></a>
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">README Generator</div>
+          <div class="font-semibold text-xl mb-2">README Generator</div>
           <p class="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -120,7 +152,7 @@
         <a href="https://giftilicious.github.io/Password-Generator/" target="_blank"><img class="w-full"
             src="./assets/images/password-portfolio.jpg" alt="Password generator project"></a>
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Password Generator</div>
+          <div class="font-semibold text-xl mb-2">Password Generator</div>
           <p class="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
