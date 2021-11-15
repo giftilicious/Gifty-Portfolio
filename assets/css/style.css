@@ -8,6 +8,9 @@ body {
     margin: 0;
 }
 
+
+
+
 /* main {
     width: 60%;
     display: block;
@@ -171,3 +174,9 @@ footer nav a {
     grid-template-columns: minmax(1, 1fr);
    }
   }   */
+
+  /* @media screen and (max-width: 1333px) {
+   #hero-img {
+       background-size: 80%;
+   }
+   }    */

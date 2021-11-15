@@ -17,29 +17,58 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="container flex items-center pb-2 mt-4 sm:mt-8">
+    <nav class="flex items-center pb-2  sm:mt-8">
       <div class="px-6"><img src="../assets/images/logo-gg_final-2.jpg" alt="Gifty Gyimah logo" /></div>
-      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-800 uppercase text-md">
+      <ul class="hidden md:flex flex-1 justify-end items-center gap-12 text-gray-800 uppercase text-md px-6">
         <a href="./about.html" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">About</a>
-        <a href="#projects" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Projects</a>
+        <a href="./portfolio.html" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Portfolio</a>
         <a href="./contact.html" class="inline-block p-2 uppercase text-lg text-gray-700 hover:text-gray-400">Contact</a>
       </ul>
-      <div class="flex md:hidden flex-1 justify-end pr-4">
-        <i class="text-2xl fas fa-bars"></i>
+      <div class="flex md:hidden flex-1 justify-end pr-2">
+        <div class="w-full sm:w-6/12 md:w-4/12 px-4">
+          <div class="relative inline-flex align-middle w-full">
+            <button
+              class="bg-gray-700 text-white active:bg-gray-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button" onclick="openDropdown(event,'dropdown-example-1')">
+              <!-- Dropdown<i class="fas fa-angle-down ml-2"></i> -->
+              <i class="text-2xl fas fa-bars"></i>
+            </button>
+            <div class="hidden bg-white  text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
+              style="min-width:12rem" id="dropdown-example-1">
+              <a href="./about.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                About
+              </a>
+              <a href="./portfolio.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                Portfolio
+              </a>
+              <a href="./contact.html"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                Contact
+              </a>
+              <!-- <div class="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25"></div>
+              <a href="#"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100">
+                Seprated link
+              </a> -->
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
 
   <!-- Hero image-->
   <section class="hero-image relative">
-    <img class="bg-cover bg-center" src="../assets/images/hero-image-3.jpg" alt="Hero image" />
+    <img class="bg-cover bg-center" src="../assets/images/hero-image-3.jpg" alt="Hero image" id="hero-img"/>
   </section>
 
   <!-- About section -->
   <main class="about mt-20 mb-10">
     <section class="container mx-auto p-10 md:p-20 transform duration-500">
-      <div class="flex flex-wrap md:flex-nowrap shadow-lg mx-auto">
-        <div class="p-20 my-20 mx-10">
+      <div class="flex flex-wrap md:flex-nowrap  mx-auto">
+        <div class="lg:p-10 lg:my-10 lg:mx-5">
           <h1 class="text-2xl font-semibold text-gray-800 mb-6">Hi, I'm Gifty!</h1>
           <p class="text-gray-700 mt-2">
             I'm a software developer who loves to build responsive websites and awesome applications. I specialize in
@@ -51,7 +80,7 @@
             projects I've worked on.
           </p>
           <button
-            class="mt-4 py-3 px-4 border-gray-800 border-2 bg-transparent text-md text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
+            class="mt-4 mb-4 py-3 px-4 border-gray-800 border-2 bg-transparent text-md text-gray-700 rounded-sm hover:bg-gray-800 hover:text-gray-100 transition duration-300">GET
             IN TOUCH</button>
         </div>
         <img class="w-full md:w-100 h-auto" src="../assets/images/about-portrait.jpg"
@@ -152,7 +181,20 @@
       </ul>
     </nav>
   </footer>
-
+  <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+  <script>
+    function openDropdown(event, dropdownID) {
+      let element = event.target;
+      while (element.nodeName !== "BUTTON") {
+        element = element.parentNode;
+      }
+      let popper = Popper.createPopper(element, document.getElementById(dropdownID), {
+        placement: 'bottom-start'
+      });
+      document.getElementById(dropdownID).classList.toggle("hidden");
+      document.getElementById(dropdownID).classList.toggle("block");
+    }
+  </script>
 </body>
 
 </html>
